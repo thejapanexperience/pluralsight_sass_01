@@ -1,0 +1,10 @@
+
+/* set as a catch-all in any css file to ensure elements don't go beyond viewport width*/
+img, embed, object, video {
+  max-width: 100%
+}
+
+/*h1 {
+  color: red;
+  max-width: 50%;
+}*/
