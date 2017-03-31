@@ -1,9 +1,9 @@
 body {
-  background-color: orange;
+  background-color: gray;
 }
 
 @media screen and (min-width: 800px) {
-  body { background-color: green;}
+  body { background-color: black;}
 }
 
 /*img {

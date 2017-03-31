@@ -1,5 +1,11 @@
+/*@media screen and (min-width: 700px) {
+  .dark_blue { order: 4; }
+  .light_blue { order: 5; }
+  .green { order: 2; }
+  .orange { order: 3; }
+  .red { order: 1; }
+}*/
 
-/* set as a catch-all in any css file to ensure elements don't go beyond viewport width*/
 
 h1 {
   color: green;
@@ -22,8 +28,13 @@ h1 {
 }
 
 .box {
-  width: 150px;
   height: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+.light_green {
+  background-color: lightgreen;
 }
 
 .dark_blue {
@@ -46,10 +57,24 @@ h1 {
   background-color: red;
 }
 
+.other_green {
+  background-color: #44af60;
+}
+
 .button {
   color: red;
   background-color: purple;
   width: 100%;
   min-height: 48px;
   /*margin: 40px;*/
+}
+
+@media screen and (min-width: 600px) {
+  .light_green { order: 0; width: 100%; }
+  .red { order: 1; width: 50%; }
+  .orange { order: 2; width: 50%;}
+  .other_green { order: 3; width: 100%;}
+  .light_blue { order: 4; width: 20%;}
+  .dark_blue { order: 5; width: 60%; }
+  .green { order: 6; width: 20%; }
 }
