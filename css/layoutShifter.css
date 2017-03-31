@@ -8,6 +8,12 @@ h1 {
   flex-wrap: wrap;
 }
 
+#container2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header {
   width: 50%;
   font-size: 6vw;
@@ -66,19 +72,9 @@ h1 {
 
 
 @media screen and (min-width: 450px) {
-  .dark_blue { order: 1; width: 100%; }
-  .light_blue { order: 2; width: 50%;}
-  .green { order: 3; width: 50%; }
+  .dark_blue { order: 1; width: 50%; height: 300px;}
+  #container2 { order: 2; width: 50%;}
   .red { order: 4; width: 100%; }
-  .orange { order: 5; width: 100%;}
-}
-
-@media screen and (min-width: 600px) {
-  .dark_blue { order: 1; width: 100%; }
-  .light_blue { order: 2; width: 50%;}
-  .green { order: 3; width: 50%; }
-  .red { order: 4; width: 33.3333333%; }
-  .orange { order: 5; width: 66.666666%;}
 }
 
 @media screen and (min-width: 800px) {
