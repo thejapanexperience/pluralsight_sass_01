@@ -4,12 +4,16 @@ img, embed, object, video {
   max-width: 100%
 }
 
+h1 {
+  color: green;
+}
+
 .button {
   color: red;
   background-color: purple;
-  min-width: 48px;
+  width: 100%;
   min-height: 48px;
-  margin: 40px;
+  /*margin: 40px;*/
 }
 
 /*h1 {
