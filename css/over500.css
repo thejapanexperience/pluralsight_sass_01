@@ -2,6 +2,10 @@ body {
   background-color: orange;
 }
 
+@media screen and (min-width: 800px) {
+  body { background-color: green;}
+}
+
 img {
   max-width: 49.5%;
 }
