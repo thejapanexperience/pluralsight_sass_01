@@ -1,16 +1,29 @@
 
 /* set as a catch-all in any css file to ensure elements don't go beyond viewport width*/
-img, embed, object, video {
-  max-width: 33%
-}
 
 h1 {
   color: green;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 50%;
+  font-size: 6vw;
+}
+
+.image {
+  width: 50%;
+  height: 50%;
+}
+
 .box {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
 }
 
 .dark_blue {
@@ -33,10 +46,6 @@ h1 {
   background-color: red;
 }
 
-.container {
-  display: flex;
-}
-
 .button {
   color: red;
   background-color: purple;
@@ -44,8 +53,3 @@ h1 {
   min-height: 48px;
   /*margin: 40px;*/
 }
-
-/*h1 {
-  color: red;
-  max-width: 50%;
-}*/

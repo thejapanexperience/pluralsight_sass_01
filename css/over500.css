@@ -6,14 +6,14 @@ body {
   body { background-color: green;}
 }
 
-img {
+/*img {
   max-width: 49.5%;
-}
+}*/
 
-.button {
+/*.button {
   width: 49.5%;
   background-color: blue;
   vertical-align: top;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
