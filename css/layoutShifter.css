@@ -74,7 +74,13 @@ h1 {
 @media screen and (min-width: 450px) {
   .dark_blue { order: 1; width: 50%; height: 300px;}
   #container2 { order: 2; width: 50%;}
-  .red { order: 4; width: 100%; }
+  .red { order: 3; width: 100%; }
+}
+
+@media screen and (min-width: 600px) {
+  .red { order: 1; width: 25%; height: 300px;}
+  #container2 { order: 2; width: 50%;}
+  .dark_blue { order: 3; width: 25%; height: 300px;}
 }
 
 @media screen and (min-width: 800px) {
