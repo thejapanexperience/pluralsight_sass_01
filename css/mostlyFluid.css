@@ -13,6 +13,10 @@ h1 {
   font-size: 6vw;
 }
 
+.centerHeader {
+  text-align: center;
+}
+
 .image {
   width: 50%;
   height: 50%;
@@ -72,15 +76,23 @@ h1 {
 @media screen and (min-width: 600px) {
   .dark_blue { order: 1; width: 50%; }
   .light_blue { order: 2; width: 50%;}
-  .green { order: 3; width: 33.33%; }
-  .red { order: 4; width: 33.33%; }
-  .orange { order: 5; width: 33.33%;}
+  .green { order: 3; width: 33.3333333%; }
+  .red { order: 4; width: 33.3333333%; }
+  .orange { order: 5; width: 33.3333333%;}
 }
 
 @media screen and (min-width: 900px) {
-  .dark_blue { order: 1; width: 50%; }
-  .light_blue { order: 2; width: 50%;}
-  .green { order: 3; width: 33.33%; }
-  .red { order: 4; width: 33.33%; }
-  .orange { order: 5; width: 33.33%;}
+  .container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
+/*@media screen and (min-width: 900px) {
+  .dark_blue { order: 1; width: 50%;max-width: 450px; margin-left: auto;}
+  .light_blue { order: 2; width: 50%;max-width: 450px; margin-right: auto;}
+  .green { order: 3; width: 33.33%; max-width: 300px; margin-left: auto;}
+  .red { order: 4; width: 33.33%; max-width: 300px;}
+  .orange { order: 5; width: 33.33%;max-width: 300px; margin-right: auto;}
+}*/

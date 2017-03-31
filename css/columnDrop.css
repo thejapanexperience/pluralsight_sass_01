@@ -76,8 +76,5 @@ h1 {
 }
 
 @media screen and (min-width: 1000px) {
-  /*.box { margin: auto;}*/
-  .dark_blue { order: 1; width: 25%; max-width: 250px; margin-left: auto; }
-  .light_blue { order: 2; width: 50%; max-width: 500px; }
-  .green { order: 3; width: 25%; max-width: 250px; margin-right: auto; }
+  .container { width: 1000px; margin-left: auto; margin-right: auto;}  
 }
