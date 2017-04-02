@@ -1,0 +1,25 @@
+{
+  "name": "06_udacity_responsive_web_design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejapanexperience/udacity_responsive_web_design_01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejapanexperience/udacity_responsive_web_design_01/issues"
+  },
+  "homepage": "https://github.com/thejapanexperience/udacity_responsive_web_design_01#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.2",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
