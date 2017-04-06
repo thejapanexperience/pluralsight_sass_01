@@ -20,9 +20,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: grey;
-  padding: 0;
-  margin-bottom: 0;
 }
 
 .headerTextBox {
@@ -30,28 +27,21 @@ body {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
-  background-color: orange;
-  padding: 0;
 }
 
 .headerText {
-  width: 90%;
+  width: 100%;
   font-size: 5vw;
 }
 
-.container2 .imageBox {
-  width: 100%;
+.imageBox {
+  width: 50%;
   background-color: yellow;
-  text-align: center;
-  padding: 0;
-  margin: 0;
 }
 
-.container2 .imageBox .image {
+.image {
   width: 100%;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
+  vertical-align: middle;
 }
 
 .centerHeader {
