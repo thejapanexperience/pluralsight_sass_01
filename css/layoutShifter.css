@@ -14,18 +14,30 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  /*-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;*/
+  -webkit-transition:1s all;
+  transition:2s all ease-in-out;
 }
 
 .container2 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  /*-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;*/
+  -webkit-transition:1s all;
+  transition:2s all ease-in-out;
 }
 
 .container3 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  /*-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;*/
+  -webkit-transition:1s all;
+  transition:2s all ease-in-out;
 }
 
 .headerTextBox {
@@ -54,12 +66,73 @@ body {
   width: 100%;
   background-color: yellow;
   text-align: center;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .table {
   margin-left: auto;
   margin-right: auto;
   background-color: orange;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.abbrName {
+  display: none;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  thead {
+    background-color: pink;
+  }
+  tbody {
+    background-color: lightblue;
+  }
+  .abbrName {
+    display:inline;
+  }
+  .fullName {
+    display: none;
+  }
+  .salary {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  table, thead, tbody, tr, th, td {
+    display: block;
+  }
+
+  /* Hide Table Header */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%
+  }
+
+  td:before {
+    position: absolute;
+    left: 6px;
+    content: attr(data-th);
+    font-weight: bold;
+  }
+
+  .abbrName {
+    display:inline;
+  }
+  .fullName {
+    display: none;
+  }
+  .salary {
+    display: none;
+  }
 }
 
 .centerHeader {
@@ -78,14 +151,17 @@ body {
 
 .dark_blue {
   background-color: darkblue;
+  position: relative;
 }
 
 .light_blue {
   background-color: lightblue;
+  position: relative;
 }
 
 .green {
   background-color: green;
+  position: relative;
 }
 
 .orange {
@@ -94,10 +170,22 @@ body {
 
 .red {
   background-color: red;
+  position: relative;
 }
 
 .other_green {
   background-color: #44af60;
+}
+
+.topLeft {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: pink;
+  z-index: 2;
+  position: absolute;
+  top: -20px;
+  left: -20px;
 }
 
 .button {
