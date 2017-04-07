@@ -6,7 +6,7 @@
   /*-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
   transition: width 2s, height 2s, background-color 2s, transform 2s;*/
   -webkit-transition:1s all;
-  transition:2s all ease-in-out;
+  transition:2.5s all ease-in-out;
 }
 
 .container2 {
@@ -16,7 +16,7 @@
   /*-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
   transition: width 2s, height 2s, background-color 2s, transform 2s;*/
   -webkit-transition:1s all;
-  transition:2s all ease-in-out;
+  transition:2.25s all ease-in-out;
 }
 
 .container3 {
@@ -48,10 +48,14 @@
 }
 
 .text {
-  color: blue;
+  color: navy;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: arial;
   font-size: 16px;
-  line-height: 1.2em;
-  max-width: 500px;
+  line-height: 1.25em;
+  text-align: justify;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -151,6 +155,7 @@
 
 .centerHeader {
   text-align: center;
+  color: pink;
 }
 
 .box {
