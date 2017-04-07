@@ -184,8 +184,20 @@ body {
   background-color: pink;
   z-index: 2;
   position: absolute;
-  top: -20px;
-  left: -20px;
+  top: -10px;
+  left: -10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.circleText {
+  margin: auto;
+  color: purple
+}
+
+.circleText::after {
+  content: "RiM";
 }
 
 .button {
