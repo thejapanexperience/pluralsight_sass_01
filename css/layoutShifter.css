@@ -1,3 +1,6 @@
+body {
+  padding: 20px;
+}
 
 .container {
   width: 100%;
@@ -247,12 +250,12 @@
 
 @media screen and (min-width: 800px) {
   .container {
-    width: 900px;
+    width: 760px;
     margin-left: auto;
     margin-right: auto;
   }
   .container3 {
-    width: 900px;
+    width: 760px;
     margin-left: auto;
     margin-right: auto;
   }
