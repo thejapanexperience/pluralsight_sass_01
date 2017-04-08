@@ -1,0 +1,282 @@
+body {
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /*-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;*/
+  -webkit-transition:1s all;
+  transition:2.5s all ease-in-out;
+}
+
+.container2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /*-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;*/
+  -webkit-transition:1s all;
+  transition:2.25s all ease-in-out;
+}
+
+.container3 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /*-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;*/
+  -webkit-transition:1s all;
+  transition:2s all ease-in-out;
+}
+
+.headerTextBox {
+  width: 50%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.headerText {
+  color: orange;
+  width: 100%;
+  font-size: 5vw;
+}
+
+.textBox {
+  width: 100%;
+  background-color: beige;
+}
+
+.text {
+  color: navy;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: arial;
+  font-size: 16px;
+  line-height: 1.25em;
+  text-align: justify;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageBox {
+  width: 50%;
+  background-color: yellow;
+}
+
+.image {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.tableBox {
+  width: 100%;
+  background-color: yellow;
+  text-align: center;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.tableBox2 {
+  width: 40%;
+  overflow-x: auto;
+  margin: auto;
+  background-color: lime;
+  text-align: center;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.abbrName {
+  display: none;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  thead {
+    background-color: pink;
+  }
+  tbody {
+    background-color: lightblue;
+  }
+  .abbrName {
+    display:inline;
+  }
+  .fullName {
+    display: none;
+  }
+  .salary {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  table, thead, tbody, tr, th, td {
+    display: block;
+  }
+
+  /* Hide Table Header */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%
+  }
+
+  td:before {
+    position: absolute;
+    left: 6px;
+    content: attr(data-th);
+    font-weight: bold;
+  }
+
+  .abbrName {
+    display:inline;
+  }
+  .fullName {
+    display: none;
+  }
+  .salary {
+    display: none;
+  }
+}
+
+.centerHeader {
+  text-align: center;
+  color: pink;
+}
+
+.box {
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+.lime {
+  background-color: lime;
+}
+
+.dark_blue {
+  background-color: darkblue;
+  position: relative;
+}
+
+.light_blue {
+  background-color: lightblue;
+  position: relative;
+}
+
+.green {
+  background-color: green;
+  position: relative;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.red {
+  background-color: red;
+  position: relative;
+}
+
+.other_green {
+  background-color: #44af60;
+}
+
+.topLeft {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: pink;
+  z-index: 1;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-transition:1s all;
+  transition:0.5s all linear;
+}
+
+.topLeft:hover {
+  background-color: gray;
+  cursor: pointer; cursor: hand;
+}
+
+.topLeft:focus {
+  background-color: orange;
+  outline:0;
+}
+
+.circleText {
+  margin: auto;
+  color: purple
+}
+
+.circleTextIcon {
+  margin: auto;
+  color: purple
+}
+
+.circleText::after {
+  content: "RiM";
+}
+
+.button {
+  color: red;
+  background-color: purple;
+  width: 100%;
+  min-height: 48px;
+  /*margin: 40px;*/
+}
+
+
+@media screen and (min-width: 450px) {
+  .dark_blue { order: 1; width: 50%; height: 300px;}
+  #container2 { order: 2; width: 50%;}
+  .red { order: 3; width: 100%; }
+}
+
+@media screen and (min-width: 600px) {
+  .red { order: 1; width: 25%; height: 300px;}
+  #container2 { order: 2; width: 50%;}
+  .dark_blue { order: 3; width: 25%; height: 300px;}
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container3 {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*@media screen and (min-width: 900px) {
+  .dark_blue { order: 1; width: 50%;max-width: 450px; margin-left: auto;}
+  .light_blue { order: 2; width: 50%;max-width: 450px; margin-right: auto;}
+  .green { order: 3; width: 33.33%; max-width: 300px; margin-left: auto;}
+  .red { order: 4; width: 33.33%; max-width: 300px;}
+  .orange { order: 5; width: 33.33%;max-width: 300px; margin-right: auto;}
+}*/
