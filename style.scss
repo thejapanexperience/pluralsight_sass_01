@@ -3,6 +3,8 @@ $myLightGrey: #CBD4C2;
 $myWhite: #FFFCFF;
 $myBlue: #247BA0;
 $myKhaki: #C3B299;
+$baseFontSize: 16px;
+$myBorder: 1px solid $myWhite;
 
 body {
   padding: 20px;
@@ -18,6 +20,7 @@ body {
   -webkit-transition:1s all;
   transition:2.5s all ease-in-out;
 }
+
 
 .navBox {
   display: flex;
@@ -45,21 +48,92 @@ body {
 
 .navItem {
   margin: auto;
-  font-size: 20px;
+  font-size: $baseFontSize * 1.35;
 }
 
 @media screen and (max-width: 700px){
-  .navBox{
-    width: 100%;
-    height: 20px;
-    border-right: none;
-    border-bottom: 1px $myLightGrey solid;
+  .navBar {
+    display: none;
   }
-  .navBox:last-of-type {
+  // .navBox{
+  //   width: 100%;
+  //   height: 20px;
+  //   border-right: none;
+  //   border-bottom: 1px $myLightGrey solid;
+  // }
+  // .navBox:last-of-type {
+  //   border-bottom: none;
+  // }
+  // .navItem {
+  //   font-size: $baseFontSize;
+  // }
+}
+
+.navBarMob {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $myDarkGrey;
+  -webkit-transition:1s all;
+  transition:2.5s all ease-in-out;
+
+  .hamburger {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    .span {
+      margin: auto;
+      width: 100%;
+      height: 8px;
+      background-color: orange;
+    }
+  }
+
+  .navBoxMob {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px $myLightGrey solid;
+    color: $myKhaki;
+    .navItemMob {
+      margin: auto;
+      font-size: $baseFontSize * 1.35;
+    }
+  }
+  .navBoxMob:hover {
+    background-color: $myBlue;
+  }
+  .navBoxMob:focus {
+    background-color: $myKhaki;
+    color: $myBlue;
+    outline:0;
+  }
+  .navBoxMob:last-of-type {
     border-bottom: none;
   }
-  .navItem {
-    font-size: 14px;
+}
+
+@media screen and (min-width: 701px){
+  .navBarMob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navBarMob {
+    .navBoxMob {
+      display: none;
+      // display: flex;
+      // flex-wrap: wrap;
+    }
   }
 }
 
@@ -104,7 +178,7 @@ body {
 .headerText {
   color: $myDarkGrey;
   width: 100%;
-  font-size: 10vw;
+  font-size: $baseFontSize * 5;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -127,7 +201,7 @@ body {
   min-height: 48px;
   border: 0;
   border-radius: 5px;
-  font-size: 1.1em;
+  font-size: $baseFontSize * 2;
   /*margin: 40px;*/
 }
 
@@ -141,7 +215,7 @@ body {
   padding-left: 5px;
   padding-right: 5px;
   font-family: arial;
-  font-size: 16px;
+  font-size: $baseFontSize;
   line-height: 1.25em;
   text-align: justify;
   max-width: 450px;
@@ -328,7 +402,7 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-  .container, .container2, .container3, .navBar, {
+  .container, .container2, .container3, .navBar, .navBarMob {
     width: 760px;
     margin-left: auto;
     margin-right: auto;
