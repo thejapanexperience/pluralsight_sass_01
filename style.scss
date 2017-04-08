@@ -71,11 +71,13 @@ body {
 
 .navBarMob {
   width: 100%;
+  height: 50px;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 5px;
   background-color: $myDarkGrey;
   -webkit-transition:1s all;
-  transition:2.5s all ease-in-out;
+  transition:0.25s all linear;
 
   .hamburger {
     display: flex;
@@ -97,15 +99,20 @@ body {
   .navBoxMob {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    opacity: 0;
+    margin: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     text-align: center;
-    border-bottom: 1px $myLightGrey solid;
+    // border-bottom: 1px $myLightGrey solid;
     color: $myKhaki;
+    transition:0.1s all linear;
     .navItemMob {
       margin: auto;
+      opacity: 0;
       font-size: $baseFontSize * 1.35;
+      transition:0.5s all linear;
+
     }
   }
   .navBoxMob:hover {
@@ -115,9 +122,6 @@ body {
     background-color: $myKhaki;
     color: $myBlue;
     outline:0;
-  }
-  .navBoxMob:last-of-type {
-    border-bottom: none;
   }
 }
 
@@ -130,7 +134,7 @@ body {
 @media screen and (max-width: 700px) {
   .navBarMob {
     .navBoxMob {
-      display: none;
+      // display: none;
       // display: flex;
       // flex-wrap: wrap;
     }
