@@ -7,8 +7,32 @@
   <script src="https://use.fontawesome.com/8d11484677.js"></script>
   <link rel="stylesheet" href="style.min.css">
 </head>
-<body>
-  <div class="navBar">
+<body id="body">
+
+  <div class="modal" id="bigModal">
+    <div class="modalBox">
+      <div class="modalContent">
+        <span class="modalText">MODAL</span>
+        <div class="buttonBox" id="bigModalCloseButton">
+          <span class="button">Close!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="smallModal">
+    <div class="modalBox">
+      <div class="modalContent">
+        <span class="modalText">MODAL</span>
+        <div class="buttonBox" id="smallModalCloseButton">
+          <span class="button">Close!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="navBar">
     <div class="navBox" tabindex="1">
       <div class="navItem">Home</div>
     </div>
@@ -32,27 +56,27 @@
       <span class="span" id="span2"></span>
       <span class="span" id="span3"></span>
     </div><br>
-    
+
     <div class="navBoxMob" tabindex="1">
       <div class="navItemMob">Home</div>
     </div>
-    
+
     <div class="navBoxMob" tabindex="1">
       <div class="navItemMob">About</div>
     </div>
-    
+
     <div class="navBoxMob" tabindex="1">
       <div class="navItemMob">Resume</div>
     </div>
-    
+
     <div class="navBoxMob" tabindex="1">
       <div class="navItemMob">Extras</div>
     </div>
-    
+
     <div class="navBoxMob" tabindex="1">
       <div class="navItemMob">Awesomeness</div>
     </div>
-    
+
   </div>
 
 
@@ -65,8 +89,11 @@
     </div>
   </div>
   <br>
-  <div class="container">
-    <button class="button" type="button" name="button">Button!</button>
+  <div class="container" id="bigModalOpenButton">
+    <button class="button" type="button" name="button">FullScreenModal</button>
+  </div><br>
+  <div class="container" id="smallModalOpenButton">
+    <button class="button" type="button" name="button">SmallModal</button>
   </div>
   <br>
   <br>
@@ -243,6 +270,8 @@
       </table>
     </div>
   </div>
+  </div>
+
 
 </body>
 <script src="index.js" charset="utf-8"></script>
