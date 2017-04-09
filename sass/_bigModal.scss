@@ -1,0 +1,56 @@
+$myDarkGrey: #50514F;
+$myLightGrey: #CBD4C2;
+$myWhite: #FFFCFF;
+$myBlue: #247BA0;
+$myKhaki: #C3B299;
+$baseFontSize: 16px;
+$myBorder: 1px solid $myWhite;
+
+#bigModal {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: pink;
+  .modalBox {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    background-color: green;
+    .modalContent {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      width: 80%;
+      height: 200px;
+      background-color: yellow;
+      text-align: center;
+      .modalText {
+        font-size: 15vw;
+        margin: auto;
+      }
+      @media screen and (min-width: 1024px){
+        .modalText {
+          font-size: calc(1024px * 0.15)
+        }
+      }
+      .buttonBox {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        background-color: turquoise;
+        .button {
+          width: 100%;
+          margin: auto;
+          font-size: 5vw;
+        }
+      }
+    }
+  }
+}

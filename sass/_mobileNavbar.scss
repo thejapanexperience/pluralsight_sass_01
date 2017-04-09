@@ -1,0 +1,70 @@
+.navBarMob {
+  width: 100%;
+  height: 49px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background-color: $myLightGrey;
+  -webkit-transition:1s all;
+  transition:0.25s all linear;
+  .hamburgerBackground {
+    background-color: darken($myMainColorBlue, 0%);
+    width: 100%;
+    height: 49px;
+    margin: auto;
+    margin-bottom: 1px;
+    .hamburger {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50px;
+      height: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      .span {
+        margin: auto;
+        width: 100%;
+        height: 8px;
+        background-color: lighten($myMainColorBlue, 80%);
+      }
+    }
+  }
+
+  .navBoxMob {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    background-color: $myMainColorBlue;
+    color: lighten($myMainColorBlue, 80%);
+    transition:0.1s all linear;
+    .navItemMob {
+      margin: auto;
+      opacity: 0;
+      font-size: $baseFontSize * 1.35;
+      transition:0.5s all linear;
+
+    }
+  }
+  .navBoxMob:hover {
+    background-color: lighten($myMainColorBlue, 40%);
+    color: darken($myMainColorBlue, 10%);
+  }
+  
+  .navBoxMob:focus {
+    background-color: lighten($myMainColorBlue, 20%);
+    color: lighten($myMainColorBlue, 80%);
+    outline:0;
+  }
+}
+
+@media screen and (min-width: 701px){
+  .navBarMob {
+    display: none;
+  }
+}

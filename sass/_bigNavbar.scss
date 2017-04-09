@@ -1,0 +1,48 @@
+.navBar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-transition:1s all;
+  transition:2.5s all ease-in-out;
+
+  #first {
+    border-radius:5px 0 0 5px;
+  };
+
+  #last {
+    border-radius:0 5px 5px 0;
+  };
+
+  .navBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    background-color: $myMainColorBlue;
+    color: lighten($myMainColorBlue, 80%);
+    transition: 1s all;
+
+    .navItem {
+      margin: auto;
+      font-size: $baseFontSize * 1.35;
+    }
+  }
+
+  .navBox:hover {
+    background-color: lighten($myMainColorBlue, 40%);
+    color: darken($myMainColorBlue, 10%);
+  }
+
+  .navBox:focus {
+    background-color: lighten($myMainColorBlue, 20%);
+    color: lighten($myMainColorBlue, 80%);
+    outline:0;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .navBar {
+    display: none;
+  }
+}

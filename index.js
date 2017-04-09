@@ -60,9 +60,6 @@ function toggleMenu() {
     hamburgerOpen = false;
   }
   if (hamburgerOpen) {
-    for (let i = 0; i < spans.length; i++) {
-      spans[i].style.backgroundColor = '#247BA0';
-    }
     for (let i = 0; i < navBoxMobs.length; i++) {
       navBoxMobs[i].style.opacity = '1';
     }
@@ -72,9 +69,6 @@ function toggleMenu() {
 
     document.getElementsByClassName('navBarMob')[0].style.height = '300px';
   } else {
-    for (let i = 0; i < spans.length; i++) {
-      spans[i].style.backgroundColor = 'orange';
-    }
     for (let i = 0; i < navBoxMobs.length; i++) {
       navBoxMobs[i].style.opacity = '0';
     }
