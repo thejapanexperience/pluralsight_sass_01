@@ -70,7 +70,7 @@ function toggleMenu() {
       navItemMobs[i].style.opacity = '1';
     }
 
-    document.getElementsByClassName('navBarMob')[0].style.height = '410px';
+    document.getElementsByClassName('navBarMob')[0].style.height = '300px';
   } else {
     for (let i = 0; i < spans.length; i++) {
       spans[i].style.backgroundColor = 'orange';
@@ -82,7 +82,7 @@ function toggleMenu() {
       navItemMobs[i].style.opacity = '0';
     }
 
-    document.getElementsByClassName('navBarMob')[0].style.height = '50px';
+    document.getElementsByClassName('navBarMob')[0].style.height = '49px';
   }
 }
 
